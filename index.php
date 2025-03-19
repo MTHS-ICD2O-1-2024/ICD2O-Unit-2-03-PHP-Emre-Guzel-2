@@ -57,7 +57,7 @@
     </div>
     <br>
   </div>
-  <img class="Calculate" src="images/street.jpg" alt="Formula of rectengle">
+  <img class="Calculate" src="images/street.jpg" alt="Street">
 </body>
 
 </html>
