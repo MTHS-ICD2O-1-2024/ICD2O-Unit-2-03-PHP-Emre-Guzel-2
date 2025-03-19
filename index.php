@@ -29,32 +29,34 @@
         <span class="mdl-layout-title">Street Calculator</span>
       </div>
     </header>
-    <h3 class="dimatoins">Please enter following </h3>
-    <br>
-    <form action="answer.php" method="GET">
-      <p>Street number</p>
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="street_number">
-        <label class="mdl-textfield__label" for="sample2">Street number</label>
-        <span class="mdl-textfield__error">Input is not a number!</span>
-      </div>
-      <p>Street name</p>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="text" name="street_name">
-        <label class="mdl-textfield__label" for="sample3">Street name</label>
-      </div>
+    <div class="container">
+      <h3 class="dimatoins">Please enter following </h3>
       <br>
-      <main id="click-me " class="mdl-layout__content">
-        <button id="click" type="submit" 
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-          Enter
-        </button>
-      </main>
-    </form>
-    <p >Your address is: </p>
+      <form action="answer.php" method="GET">
+        <p>Street number</p>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="street_number">
+          <label class="mdl-textfield__label" for="sample2">Street number</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <p>Street name</p>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" name="street_name">
+          <label class="mdl-textfield__label" for="sample3">Street name</label>
+        </div>
+        <br>
+        <main id="click-me " class="mdl-layout__content">
+          <button id="click" type="submit"
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Enter
+          </button>
+        </main>
+      </form>
+      <p>Your address is: </p>
 
+    </div>
+    <br>
   </div>
-  <br>
   <img class="Calculate" src="images/street.jpg" alt="Formula of rectengle">
 </body>
 
