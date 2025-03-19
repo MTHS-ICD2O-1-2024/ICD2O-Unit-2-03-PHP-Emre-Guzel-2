@@ -33,17 +33,18 @@
       <div class="right-image">
       </div>
       <?php
-      echo '<p>' . (2 * (5 + 3)), "cm" . '</p>';
+      $street_number = $_GET["street_number"];
       ?>
       <?php
-      echo '<p>' . 5 * 3, "cm^2" . '</p>';
+      $street_name = $_GET["street_name"];
+      echo "<p>Your address is: ". $street_number." ". $street_name."</p>";
       ?>
       <br />
       <div class="page-content-answer">
         <a href="./index.php">Return ...</a>
       </div>
       <div class="right-image">
-        <img src="./images/area_and_perimeter.png" alt="Calculation">
+        <img src="./images/street .jpg" alt="Calculation">
       </div>
     </main>
 </body>

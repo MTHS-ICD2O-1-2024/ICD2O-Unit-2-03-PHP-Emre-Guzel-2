@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Math program in PHP " />
+  <meta name="description" content="Street Calculator " />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Emre Guzel" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="css/style.css">
-  <title>Math program in PHP</title>
+  <title>Street Calculator</title>
 </head>
 
 <body>
@@ -26,36 +26,36 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Math program in PHP</span>
+        <span class="mdl-layout-title">Street Calculator</span>
       </div>
     </header>
-    <main class="mdl-layout__content">
-      <!-- Simple Textfield for integers-->
-      <form action="answer.php" method="GET">
-        <div class="mdl-textfield mdl-js-textfield">
-          <!-- input pattern attribute -->
-          <br />
-          <!-- Accent-colored raised button with ripple -->
-          <?php
-          echo '<p> ' . 'Perimeter is...' . '</p>';
-          ?>
-          <?php
-          echo '<p> ' . 'Area is...' . '</p>';
-          ?>
-          <br>
-          <button id="btn-click"
-            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            type="submit">
-            Calculate
-          </button>
-        </div>
-      </form>
-      <div class="right-image">
-        <img src="./images/area_and_perimeter.png" alt="Calculation">
+    <h3 class="dimatoins">Please enter following </h3>
+    <br>
+    <form action="answer.php" method="GET">
+      <p>Street number</p>
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="street_number">
+        <label class="mdl-textfield__label" for="sample2">Street number</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
       </div>
-      <br />
-    </main>
+      <p>Street name</p>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" name="street_name">
+        <label class="mdl-textfield__label" for="sample3">Street name</label>
+      </div>
+      <br>
+      <main id="click-me " class="mdl-layout__content">
+        <button id="click" type="submit" 
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+          Enter
+        </button>
+      </main>
+    </form>
+    <p >Your address is: </p>
+
   </div>
+  <br>
+  <img class="Calculate" src="images/street.jpg" alt="Formula of rectengle">
 </body>
 
 </html>
